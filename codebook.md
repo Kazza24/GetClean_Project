@@ -1,44 +1,42 @@
 # Codebook  For Get & Clean Project, John Hopkins University
 
-Author: Karin Kolbe, 
+Author: Karin Kolbe <br /> 
 Date: October 2020  
 
 
-See README for overview information, and the files.
+See file README.md for an overview, a list of the files and the processing steps.
 
 
 ## Study Design and Raw Data
 
-As an assignment for Get & Cleaning data, the following data is used.
+The UCI Human Activity Recognition data is available [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+The R program downloads from this link.<br />
 
-The UCI Human Activity Recognition data is available at ttps://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
-(The R program downloads from this link).
+In this Zip file there are several files:<br /> 
 
-In this Zip file there is 
-	README.rtf which explains the project and how the data was collected 
-	features_info.txt elaborates on the data
-	features.txt which lists the 561 variables pf the features vector
-	activity_labels.txt which lists the 6 activities "WALKING", etc.
+File | Purpose
+--- | ---
+README.rtf | Readme of the raw data, explains the project and how the data was collected 
+features_info.txt | elaborates on the data
+features.txt | lists the 561 variables pf the features vector
+activity_labels.txt | lists the 6 activities "WALKING", etc.
+X.txt | the raw data, (Test and Training (detailed in their README.rtf) 561 columns
+subject.txt | person  (Test and Training (detailed in their README.rtf)
+y | activity code (Test and Training (detailed in their README.rtf)
+<br /> <br /> 
 
-	For both Test and Training (detailed in their README.rtf)
-		subject	- the person
-		X	- all the data
-		y	- the activity 
-
-	Additionally for both Test and Training there are 9 Inertial Signals files, but these were excluded from the Tidy Data as they were not required by the assignment (see step 2 in Data Processing, below).
+Additionally for both Test and Training there are 9 Inertial Signals files, but these were excluded from the Tidy Data as they were not required by the assignment 
+(see step 2 of the Data Processing in README).
 
 
-## CodeBook for the final datafile.
+## CodeBook for the final datafile
 
-__Identifiers__
+#### Identifiers
 
-person		integer - id of the person, 1-30.
-activity	factor with 6 levels, "WALKING", "SITTING", etc
+person	 : integer, id of the person, 1-30.
+activity : factor with 6 levels, "WALKING", "SITTING", etc
 	
-__Further Columns__
-From the original data, only those for Means or STDs were selected. 
-(Further information about each variable is described in the features_info.txt).
-
+#### Mean data
 There is one row per person and activity, so the data is the mean across all original observations
 
 timeBodyAccelerationMeanX                           timeBodyAccelerationMeanY                               
