@@ -23,17 +23,17 @@ activity_labels.txt | lists the 6 activities "WALKING", etc.
 X.txt | the raw data, (Test and Training (detailed in their README.rtf) 561 columns
 subject.txt | person  (Test and Training (detailed in their README.rtf)
 y | activity code (Test and Training (detailed in their README.rtf)
-<br /> <br /> 
+ 
 
 Additionally for both Test and Training there are 9 Inertial Signals files, but these were excluded from the Tidy Data as they were not required by the assignment 
 (see step 2 of the Data Processing in README).
 
 
-## CodeBook for the final datafile
+## CodeBook
 
 #### Identifiers
 
-person	 : integer, id of the person, 1-30.
+person	 : integer, id of the person, 1-30<br /> 
 activity : factor with 6 levels, "WALKING", "SITTING", etc
 	
 #### Mean data
